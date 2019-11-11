@@ -19,7 +19,7 @@ nav ul{
 }
 
 nav li{
-    display: inline-block;
+    display: block;
     float: right;
     padding-right: 50px;
     
