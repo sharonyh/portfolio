@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+  </head>
+
+  <body>
+
+    <title>MAM</title>
+        <div class="skip"><a href="#main">Skip to Main Content</a></div>
+        <div class="nav">
+          <nav>
+                <div class="myname">
+                        <h7/><a href="../index.html">SHARON LIN</a></h7>
+                    </div>
+            <ul>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="../index.html">Works</a></li>
+            </ul>
+          </nav>
+        </div>
+
+    <h1 id="main">Michigan Advertising and Marketing</h1>
+
+    <p>
+        As of May 2019, I am the Vice President of Creative Strategy at the Michigan Advertising
+        and Marketing club. In this position, I oversee and lead our 15 Creative Design members
+        across our 15 different clients. As the lead designer representing the club as a whole,
+        I've designed business cards to advertise our club to primarily freshmen and sophomores 
+        interested in increasing their on-campus involvement. Within the club itself, I've also
+        helped design Member Spotlight awards to celebrate and reward our hardest-working members
+        for their significant achievements and contributions to the club.  
+    </p>
+
+    <img id="mamBusiness" src="../images/mam/mam-business.jpg" class = modalImg alt="Business card for MAM used during fall 2019 recruiting.">
+
+    <div id="myModal" class="modal">
+      <div>
+        <span class="close">&times;</span>
+        <img class="modal-content" id="mamBusinessImg">
+        <div class="caption" id="caption"></div>
+      </div>
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("mamBusiness");
+        var modalImg = document.getElementById("mamBusinessImg");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+            modal.style.display = "none";
+        }
+    </script>
+
+<img id="mamMem" src="../images/mam/member-spotlight.jpg" class = modalImg alt="Member Spotlight award.">
+
+<div id="myModal2" class="modal">
+  <div>
+    <span class="close">&times;</span>
+    <img class="modal-content" id="mamMemImg">
+    <div class="caption" id="caption2"></div>
+  </div>
+</div>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal2");
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("mamMem");
+    var modalImg = document.getElementById("mamMemImg");
+    var captionText = document.getElementById("caption2");
+    img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[1];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+        modal.style.display = "none";
+    }
+</script>
+
+<img id="mamAD" src="../images/mam/ad-spotlight.jpg" class = modalImg alt="Account Director spotlight award.">
+
+    <div id="myModal3" class="modal">
+      <div>
+        <span class="close">&times;</span>
+        <img class="modal-content" id="mamADImg">
+        <div class="caption" id="caption3"></div>
+      </div>
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal3");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("mamAD");
+        var modalImg = document.getElementById("mamADImg");
+        var captionText = document.getElementById("caption3");
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[2];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+            modal.style.display = "none";
+        }
+    </script>
+
+    <h2>Workshops</h2>
+
+    <p>
+        As part of my VP — Creative Design duties, I educate new Creative Design members on 
+        design thinking and strategy. Workshop topics so far have been Best Practices in Design
+        (aka Avoiding Lawsuits 101), Visual Literacy, Color Psychology in Advertising, and 
+        Designing for Accessibility.
+    </p>
+
+
+    <p>
+        For presentations, I tend not to use too many words per slide. To be honest, my ideal
+        number of words per slide is less than five. However, I understand how this might lead
+        to my presentations being difficult to understand for viewers who have not or cannot
+        attend my presentations. So because I'm always thinking of how to make my work as 
+        accessible as possible, I leave thorough notes beneath every slide to emulate the 
+        verbal content of my presentations, so that those who've missed it may hopefully get 
+        a comprehensive understanding of all the material shown. 
+    </p>
+
+    <footer>
+        <p><br/>
+            &copy; Sharon Lin 2019</p>
+    </footer>  
+
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+  </head>
+
+  <body>
+
+    <title>USON Card King 2019</title>
+    <div class="skip"><a href="#main">Skip to Main Content</a></div>
+    <div class="nav">
+      <nav>
+          <div class="myname">
+              <h7/><a href="../index.html">SHARON LIN</a></h7>
+          </div>
+        <ul>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="../index.html">Works</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <h1>USON Card King 2019</h1>
+
+    <p>
+        Over the summer of 2019, I contacted USON Card King again asking if I could intern there for another summer. 
+        They happily agreed, and I began working with them again, this time learning about catalogue design, book design, 
+        some ui design, and more business card design. 
+    </p>
+
+    <div class="u-row" id="main">
+        <div class="u-column">
+          <img src="../images/uson-card-king-2019/business-card-4.jpg" alt="abstract and modern white business card"
+          style="width:100%" onclick="myFunction(this)"/>
+        </div>
+        <div class="u-column">
+          <img src="../images/uson-card-king-2019/business-card-5.jpg" alt="modern business card design for a hotel"
+          style="width:100%" onclick="myFunction(this)"/>
+        </div>
+        <div class="u-column">
+          <img src="../images/uson-card-king-2019/business-card-6.jpg" alt="blue retro business card design"
+          style="width:100%" onclick="myFunction(this)"/>
+        </div>
+        <div class="u-column">
+          <img src="../images/uson-card-king-2019/business-card-7.jpg" alt="red retro business card design"
+          style="width:100%" onclick="myFunction(this)"/>
+        </div>
+    </div>
+  
+    <div class="u-container">
+        <span onclick="this.parentElement.style.display='none'" class="u-closebtn">&times;</span>
+        <img id="u-expandedImg" style="width:100%">
+        <!-- <div id="imgtext"></div> -->
+    </div>
+  
+    <script>
+    function myFunction(imgs) {
+        var expandImg = document.getElementById("u-expandedImg");
+        // var imgText = document.getElementById("imgtext");
+        expandImg.src = imgs.src;
+        // imgText.innerHTML = imgs.alt;
+        expandImg.parentElement.style.display = "block";
+    }
+    </script>
+
+    <footer>
+      <p><br/>
+        &copy; Sharon Lin 2019</p>
+    </footer>  
+  </body>
+</html>

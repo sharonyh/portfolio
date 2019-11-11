@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+  </head>
+  
+  <body>
+
+    <title>Birthday Cards</title>
+    <div class="skip"><a href="#main">Skip to Main Content</a></div>
+    <div class="nav">
+      <nav>
+          <div class="myname">
+              <h7/><a href="../index.html">SHARON LIN</a></h7>
+            </div>
+        <ul>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="../index.html">Works</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <h1>Birthday Cards</h1>
+
+    <p>
+        Graphic design is my greatest passion. Wanting to practice my skills more, I started designing birthday 
+        and Christmas cards for friends starting from summer 2017. Each birthday card is entirely customized to the 
+        friend, taking into account their favorite color, indulgences, and idiosyncrasies.  
+    </p>
+
+    <div class="birthday-row" id="main">
+      <div class="birthday-column">
+        <img src="../images/birthday-cards/christmas-white.jpg" alt="white christmas card"
+        style="width:100%" onclick="myFunction(this)"/>
+      </div>
+      <div class="birthday-column">
+        <img src="../images/birthday-cards/christmas-red.jpg" alt="red christmas card"
+        style="width:100%" onclick="myFunction(this)"/>
+      </div>
+      <div class="birthday-column">
+        <img src="../images/birthday-cards/julianna-card.jpg" alt="bee birthday card"
+        style="width:100%" onclick="myFunction(this)"/>
+      </div>
+      <div class="birthday-column">
+        <img src="../images/birthday-cards/karen-card-front.jpg" alt="totoro card front graphic"
+        style="width:100%" onclick="myFunction(this)"/>
+      </div>
+      <div class="birthday-column">
+        <img src="../images/birthday-cards/karen-card-back.jpg" alt="totoro card inside graphic"
+        style="width:100%" onclick="myFunction(this)"/>
+      </div>
+      <div class="birthday-column">
+        <img src="../images/birthday-cards/lauren-card.jpg" alt="pusheen birthday card"
+        style="width:100%" onclick="myFunction(this)"/>
+      </div>
+      <div class="birthday-column">
+        <img src="../images/birthday-cards/kat-card.jpg" alt="paisley birthday card"
+        style="width:100%" onclick="myFunction(this)"/>
+      </div>
+      <div class="birthday-column">
+        <img src="../images/birthday-cards/loafly.png" alt="molang and bread birthday card"
+        style="width:100%" onclick="myFunction(this)"/>
+      </div>
+      <div class="birthday-column">
+        <img src="../images/birthday-cards/grad-card.jpg" alt="con-grad-ulatory card"
+        style="width:100%" onclick="myFunction(this)"/>
+      </div>
+      <div class="birthday-column">
+        <img src="../images/birthday-cards/chris-card.jpg" alt="floral birthday card"
+        style="width:100%" onclick="myFunction(this)"/>
+      </div>
+    </div>
+
+    <div class="birthday-container">
+        <span onclick="this.parentElement.style.display='none'" class="birthday-closebtn">&times;</span>
+        <img id="birthday-expandedImg" style="width:100%">
+        <!-- <div id="imgtext"></div> -->
+    </div>
+
+    <script>
+      function myFunction(imgs) {
+        var expandImg = document.getElementById("birthday-expandedImg");
+        // var imgText = document.getElementById("imgtext");
+        expandImg.src = imgs.src;
+        // imgText.innerHTML = imgs.alt;
+        expandImg.parentElement.style.display = "block";
+      }
+    </script>
+  
+   
+    
+
+
+
+  <footer>
+      <p><br/>
+        &copy; Sharon Lin 2019</p>
+    </footer>  
+  </body>
+</html>

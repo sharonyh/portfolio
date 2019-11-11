@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+  </head>
+
+  <body>
+
+    <title>Fodmappa</title>
+    <div class="skip"><a href="#main">Skip to Main Content</a></div>
+    <div class="nav">
+        <nav>
+            <div class="myname">
+                <h7/><a href="../index.html">SHARON LIN</a></h7>
+            </div>
+            <ul>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="../index.html">Works</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <h1>Fodmappa</h1>
+
+    <p>
+        During the fall semester of my sophomore year, I was enrolled in a graphic design 
+        course through the School of Information. For one of my projects, I had to envision
+        a branding guideline and a high-fidelity digital prototype for an app. The company
+        I was designing for was a health app which tracked your daily dietary intake and
+        made suggestions based on your eating habits. It also served as a digital grocery list. 
+    </p>
+
+    <div class="fod-row" id="main">
+            <div class="fod-column">
+              <img src="../images/fodmappa/fodmappa-1.jpg" alt="fodmappa style guide cover page"
+              style="width:100%" onclick="myFunction(this)"/>
+            </div>
+            <div class="fod-column">
+              <img src="../images/fodmappa/fodmappa-2.jpg" alt="fodmappa color guidelines"
+              style="width:100%" onclick="myFunction(this)"/>
+            </div>
+            <div class="fod-column">
+              <img src="../images/fodmappa/fodmappa-3.jpg" alt="fodmappa font guidelines"
+              style="width:100%" onclick="myFunction(this)"/>
+            </div>
+            <div class="fod-column">
+              <img src="../images/fodmappa/fodmappa-4.jpg" alt="fodmappa logo sizing guidelines"
+              style="width:100%" onclick="myFunction(this)"/>
+            </div>
+            <div class="fod-column">
+              <img src="../images/fodmappa/fodmappa-5.jpg" alt="fodmappa logo space area guidelines"
+              style="width:100%" onclick="myFunction(this)"/>
+            </div>
+            <div class="fod-column">
+              <img src="../images/fodmappa/fodmappa-6.jpg" alt="fodmappa color variant guidelines"
+              style="width:100%" onclick="myFunction(this)"/>
+            </div>
+            <div class="fod-column">
+              <img src="../images/fodmappa/fodmappa-7.jpg" alt="fodmappa photography guidelines"
+              style="width:100%" onclick="myFunction(this)"/>
+            </div>
+            <div class="fod-column">
+              <img src="../images/fodmappa/fodmappa-8.jpg" alt="fodmappa merchandise guidelines"
+              style="width:100%" onclick="myFunction(this)"/>
+            </div>
+    </div>
+      
+    <div class="fod-container">
+            <span onclick="this.parentElement.style.display='none'" class="fod-closebtn">&times;</span>
+            <img id="fod-expandedImg" style="width:100%">
+            <!-- <div id="imgtext"></div> -->
+    </div>
+      
+    <script>
+        function myFunction(imgs) {
+            var expandImg = document.getElementById("fod-expandedImg");
+            // var imgText = document.getElementById("imgtext");
+            expandImg.src = imgs.src;
+            // imgText.innerHTML = imgs.alt;
+              expandImg.parentElement.style.display = "block";
+        }
+    </script>
+
+    <!-- <img src="../images/fodmappa/fodmappa-wireframes.jpg" alt="high-fidelity wireframes for the fodmappa app" class="fod-frames"/>   -->
+
+    <img id="myFodImg" src="../images/fodmappa/fodmappa-wireframes.jpg" class = modalImg alt="High-fidelity wireframes for the Fodmappa app.">
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="fodImg">
+        <div class = "caption" id="caption"></div>
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("myFodImg");
+        var modalImg = document.getElementById("fodImg");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+            modal.style.display = "none";
+        }
+    </script>
+
+
+
+
+    <footer>
+        <p><br/>
+            &copy; Sharon Lin 2019</p>
+    </footer> 
+
+
+
+  </body>
+</html>
