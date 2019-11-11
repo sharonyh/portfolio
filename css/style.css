@@ -27,7 +27,7 @@ nav li{
 
 nav a{
     text-decoration: none;
-    color: #F6473C;
+    color: #D11417;
     font-size: 1.2em;
     font-family: 'Montserrat', sans-serif;
 }
@@ -35,12 +35,12 @@ nav a{
 nav a.active-page{
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2em;
-    color: #D11417;
+    color: #A51213;
     font-weight: bolder;
 }
 
 nav a:hover {
-    color: #D11417;
+    color: #A51213;
     font-weight: bold;
     cursor: pointer;
 }
